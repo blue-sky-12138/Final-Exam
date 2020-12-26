@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  type="text/css" rel="stylesheet" href="../css/login.css">
+    <title>主页</title>
+</head>
+<body>
+<h1>{{.Title}}</h1>
+{{if.VisterOK}}
+<a href="/Login"><input type="submit" id="denglu" value="登录"></a>
+{{end}}
+{{if.LoginOK}}
+<br>
+<a href="/History"><input type="button" value="查看历史记录"></a>
+<a href="/Deal"><input type="button" value="进行转账"></a>
+{{end}}
+<br>
+</body>
+</html>
